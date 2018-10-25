@@ -1,6 +1,6 @@
 def get_max(a, b):
     """
-       Compare two values and return max value
+       Compare two values and return max value.
     :param a: int
     :param b: int
     :return: max value
@@ -13,7 +13,7 @@ def get_max(a, b):
 
 def get_max_without_arguments():
     """
-       Raise Error, if there is no argument
+       Raise Error, if there is no argument.
     """
     raise TypeError("No arguments");
 
@@ -21,14 +21,14 @@ def get_max_without_arguments():
 def get_max_with_one_argument(a):
     """
        :param a: int
-       return that value
+       Return that value.
     """
     return a
 
 
 def get_max_with_many_arguments(*args):
     """
-        return largest number among args
+        Return largest number among args.
     """
 
     max_number = float('-inf')
@@ -42,7 +42,7 @@ def get_max_with_many_arguments(*args):
 
 def get_max_with_one_or_more_arguments(first, *args):
     """
-        return largest number among first + args
+        Return largest number among first + args.
     """
 
     max_number = float('-inf')
@@ -56,7 +56,7 @@ def get_max_with_one_or_more_arguments(first, *args):
 
 def get_max_bounded(*args, low, high):
     """
-        return largest number among args bounded by low & high
+        Return largest number among args bounded by low & high.
     """
 
     max_number = float('-inf')
@@ -70,7 +70,7 @@ def get_max_bounded(*args, low, high):
 
 def make_max(*, low, high):
     """
-        return inner function object which takes at last one argument
+        Return inner function object which takes at last one argument
         and return largest number amount it's arguments, but if the
         largest number is larger than the 'high' which given as required
         argument the inner function has to return it.
